@@ -1,5 +1,7 @@
 package org.mvpigs.commandpattern.interfaces;
 
+import java.util.UUID;
+
 /**
  * La interfaz Pedido implementa los metodos:
  * 
