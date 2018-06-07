@@ -35,6 +35,9 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
         return numBultos;
     }
 
+    public Map<String,Integer> getPedidos(){
+        return pedidos;
+    }
 
     public void calcularPesoTotal(){
         int peso = 0;
@@ -42,6 +45,9 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
             peso += pedido.getValue();
         }
         setPesoTotal(peso);
+
+        //int pesoA = pedidos.values().stream().reduce(0, (x,y) -> x+y);
+
     }
 
     public void setPesoTotal(int pesoTotal){

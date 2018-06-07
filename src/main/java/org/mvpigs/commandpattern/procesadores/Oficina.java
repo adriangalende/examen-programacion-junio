@@ -7,6 +7,7 @@ import org.mvpigs.commandpattern.interfaces.TratamientoPedido;
 public class Oficina implements Procesador {
 
 
+
     public String printarStatus(Boolean procesa, Pedido pedido) {
         if(procesa){
          return pedido.destino() + " ACEPTADO";
