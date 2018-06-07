@@ -12,6 +12,7 @@ package org.mvpigs.commandpattern.interfaces;
 
 public interface Procesador {
 
+    public String printarStatus(Boolean procesa, Pedido pedido);
     public boolean procesa(TratamientoPedido pedido);
 
 }
