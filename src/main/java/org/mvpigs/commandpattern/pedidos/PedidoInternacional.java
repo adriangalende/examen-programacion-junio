@@ -23,6 +23,10 @@ public class PedidoInternacional implements Pedido {
         return this.destino;
     }
 
+    public String id() {
+        return getId();
+    }
+
     public String getId(){
         this.id = UUID.randomUUID().toString();
         return this.id;

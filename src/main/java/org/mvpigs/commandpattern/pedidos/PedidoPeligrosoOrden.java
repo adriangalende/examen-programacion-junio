@@ -28,6 +28,10 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
         return this.destino;
     }
 
+    public String id() {
+        return getId();
+    }
+
     public String getId(){
         this.id = UUID.randomUUID().toString();
         return this.id;
