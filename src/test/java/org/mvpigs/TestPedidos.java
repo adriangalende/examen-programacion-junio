@@ -205,7 +205,7 @@ public class TestPedidos {
          * Pasasela a TratamientoPedidosMultiple en su constructor.
          */
 
-        final Integer PESO = 10;
+        final int PESO = 10;
         // Coleccion pedidos
 
         Map<String,Integer> pedidos = new HashMap<String,Integer>();

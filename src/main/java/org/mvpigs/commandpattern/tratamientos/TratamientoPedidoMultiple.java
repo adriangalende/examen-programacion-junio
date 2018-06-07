@@ -46,7 +46,7 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
         }
         setPesoTotal(peso);
 
-        //int pesoA = pedidos.values().stream().reduce(0, (x,y) -> x+y);
+        //int peso = pedidos.values().stream().reduce(0, (x,y) -> x+y);
 
     }
 
