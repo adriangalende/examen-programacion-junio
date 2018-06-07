@@ -1,4 +1,14 @@
 package org.mvpigs.commandpattern.procesadores;
 
-public class Oficina {
+import org.mvpigs.commandpattern.interfaces.Procesador;
+import org.mvpigs.commandpattern.interfaces.TratamientoPedido;
+
+public class Oficina implements Procesador {
+
+    public boolean procesa(TratamientoPedido pedido) {
+        if (pedido.tratar()) {
+            return true;
+        }
+        return false;
+    }
 }

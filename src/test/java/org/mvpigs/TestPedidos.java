@@ -131,21 +131,21 @@ public class TestPedidos {
      * tipo de pedido
      */
 
-//    @Test
-//    public void test_interface_procesador() {
-//
-//        Procesador correos = new Oficina();
-//        TratamientoPedido pedidoInt = new TratamientoPedidoInternacional(
-//                                            new PedidoInternacional("Comarca", 100));
-//        assertTrue(correos.procesa(pedidoInt));
-//
-//        TratamientoPedido pedidoConPeligro = new TratamientoPedidoPeligroso(
-//                                                 new PedidoPeligrosoOrden(
-//                                                        "Cima de los vientos",
-//                                                        "no limpiarse las uñas con este puñal"));
-//        assertTrue(correos.procesa(pedidoConPeligro));
-//    }
-//
+    @Test
+    public void test_interface_procesador() {
+
+        Procesador correos = new Oficina();
+        TratamientoPedido pedidoInt = new TratamientoPedidoInternacional(
+                                            new PedidoInternacional("Comarca", 100));
+        assertTrue(correos.procesa(pedidoInt));
+
+        TratamientoPedido pedidoConPeligro = new TratamientoPedidoPeligroso(
+                                                 new PedidoPeligrosoOrden(
+                                                        "Cima de los vientos",
+                                                        "no limpiarse las uñas con este puñal"));
+        assertTrue(correos.procesa(pedidoConPeligro));
+    }
+
 //    /**
 //     * La oficina puede enviar un mensaje que informe del
 //     * status del pedido, en funcion de si ha sido posible procesarlo.
